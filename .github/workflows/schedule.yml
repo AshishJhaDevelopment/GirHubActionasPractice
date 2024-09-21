@@ -5,7 +5,7 @@ on:
 
 jobs:
   ashish-scheduled-job:
-  runs-on: ubuntu-latest
-  steps:
-    - name: ashish schedued step 1
-    - run: echo "Ashish step 1"
+    runs-on: ubuntu-latest
+    steps:
+      - name: ashish schedued step 1
+      - run: echo "Ashish step 1"
