@@ -15,5 +15,4 @@ jobs:
       - name: checking if conditions for ends with
         #ends with
         if: endswith('ashish','sh')
-        run: echo "IT endswith sh"
-        
+        run: echo "IT endswith sh"       

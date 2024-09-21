@@ -1,0 +1,16 @@
+name: dependent-jobs
+
+on:
+  push:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      needs: job2
+      - name: Executing Job 1
+        run: echo "job1 executed"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Executing Job 2
+        run: echo "job2 executed"    
