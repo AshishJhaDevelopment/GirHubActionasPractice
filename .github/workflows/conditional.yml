@@ -1,4 +1,4 @@
-name: conditional-expressions
+name: conditional_expression
 on:
 jobs:
   checking_conditions:
