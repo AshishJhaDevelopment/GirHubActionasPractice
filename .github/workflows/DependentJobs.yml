@@ -4,9 +4,9 @@ on:
   push:
 jobs:
   job1:
+    needs: job2
     runs-on: ubuntu-latest
     steps:
-      needs: job2
       - name: Executing Job 1
         run: echo "job1 executed"
   job2:
