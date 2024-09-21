@@ -1,4 +1,4 @@
-name: ashish-custom-action
+name: ashish-custom-actions
 on: [push]
 
 jobs:
