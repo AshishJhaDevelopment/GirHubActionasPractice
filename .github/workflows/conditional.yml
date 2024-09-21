@@ -4,14 +4,16 @@ jobs:
   checking_conditions:
     runs-on: ubuntu-latest
     steps:
-      - name: checking if conditions
+      - name: checking if conditions for contains
         #Contains
         if: contains('ashish','his')
-        run: echo "IT contains ashish"
+        run: echo "IT contains his"
+      - name: checking if conditions for starts with
         #Starts with
-        if: startswith('ashish','his')
-        run: echo "IT contains ashish"
+        if: startswith('ashish','as')
+        run: echo "IT startswith as"
+      - name: checking if conditions for ends with
         #ends with
-        if: endswith('ashish','his')
-        run: echo "IT contains ashish"
+        if: endswith('ashish','sh')
+        run: echo "IT endswith sh"
         
