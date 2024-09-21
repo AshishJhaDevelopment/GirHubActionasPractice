@@ -6,11 +6,11 @@ jobs:
     name: A job to say hello
     steps:
       - name: Hello world action step
-        run: echo "The time was ${{ steps.hello.outputs.greeting }}"
+        run: echo "my-job job is running"
 
   my-job1:
     runs-on: ubuntu-latest
     name: A job to say hello 1
     steps:
       - name: Hello world action step 1
-        run: echo "The time was"      
+        run: echo "my-job1 is running"      
