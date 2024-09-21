@@ -14,4 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Executing Job 2
-        run: echo "job2 executed"    
+        run: echo "job2 executed"
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Executing Job 3
+        run: echo "job3 executed"    
