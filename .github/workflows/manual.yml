@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: manual step using command
-        runs: echo "${{input.name}}"
+        runs: echo "${{inputs.name}}"
