@@ -1,5 +1,5 @@
 name: conditional_expression
-on:
+on: [push]
 jobs:
   checking_conditions:
     runs-on: ubuntu-latest
