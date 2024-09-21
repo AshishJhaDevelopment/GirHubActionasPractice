@@ -1,0 +1,12 @@
+name: run scripts ubder workflow
+on:
+  push:
+jobs:
+  job1:
+    defaults:
+      run:
+        working-directory: ./scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: running scripts
+        run: /scriptexe.sh
