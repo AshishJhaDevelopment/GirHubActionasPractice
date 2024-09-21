@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: running scripts
-        run: /scriptexe.sh
+        run: /scriptexe.sh 
