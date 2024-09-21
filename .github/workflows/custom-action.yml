@@ -1,21 +1,11 @@
 name: ashish-custom-actions
 on:
- schedule:
-  - cron: '*/1 * * * *'
-
-
 jobs:
   my-job:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
       - name: Hello world action step
-        id: hello
-        uses: omenking/barsoom@0.0.6
-        with:
-          name: 'Brown'
-      # Use the output from the `hello` step
-      - name: Get the Output
         run: echo "The time was ${{ steps.hello.outputs.greeting }}"
 
   my-job1:
@@ -23,10 +13,4 @@ jobs:
     name: A job to say hello 1
     steps:
       - name: Hello world action step 1
-        id: hello1
-        uses: omenking/barsoom@0.0.6
-        with:
-          name: 'Brown1'
-      # Use the output from the `hello` step
-      - name: Get the Output1
-        run: echo "The time was ${{ steps.hello.outputs.greeting }}"      
+        run: echo "The time was"      

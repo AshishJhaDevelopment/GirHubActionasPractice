@@ -1,0 +1,10 @@
+name: conditional-expressions
+
+on:
+jobs:
+  checking_conditions:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checking if conditions
+      if: contains("ashish","his")
+      run: echo "IT contains ashish"
