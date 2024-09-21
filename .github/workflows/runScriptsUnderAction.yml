@@ -1,11 +1,11 @@
-name: run scripts ubder workflow
+name: run scripts under workflow
 on:
   push:
 jobs:
   job1:
     defaults:
       run:
-        working-directory: ./scripts
+        working-directory: ./GitHubActionPractice/.github/workflows/scripts
     runs-on: ubuntu-latest
     steps:
       - name: running scripts

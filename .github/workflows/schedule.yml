@@ -1,7 +1,7 @@
 name: ashish-schedule-actions
 on:
- schedule:
-  - cron: '*/10 * * * *'
+#  schedule:
+#   - cron: '*/10 * * * *'
 
 jobs:
   ashish-scheduled-job:
