@@ -6,9 +6,9 @@ on:
       description: What is your name
       required: true
       type: String
-      
-  jobs:
-    manualCommandJob:
+
+jobs:
+  manualCommandJob:
     runs-on: ubuntu-latest
     steps:
       - name: manual step using command
