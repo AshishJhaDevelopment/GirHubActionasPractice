@@ -1,5 +1,4 @@
 name: conditional-expressions
-
 on:
 jobs:
   checking_conditions:
