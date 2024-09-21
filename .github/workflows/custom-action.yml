@@ -1,5 +1,9 @@
 name: ashish-custom-actions
-on: [push]
+on:
+ push:
+ schedule:
+  - cron: '*/1 * * * *'
+
 
 jobs:
   my-job:
