@@ -1,4 +1,4 @@
-name: manualCommandTrigger
+name: workflow_dispatcher_UI_run
 on:
   workflow_dispatch:
     inputs:
