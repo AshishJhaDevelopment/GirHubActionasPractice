@@ -1,5 +1,6 @@
 name: ashish-schedule-actions
 on:
+  push:
 #  schedule:
 #   - cron: '*/10 * * * *'
 
