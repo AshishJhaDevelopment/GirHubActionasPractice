@@ -1,4 +1,4 @@
-name: Run Scripts Under Workflow
+name: Run Scripts in Workflow 
 on:
   push:
 jobs:
