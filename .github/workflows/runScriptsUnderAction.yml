@@ -5,8 +5,8 @@ jobs:
   job1:
     defaults:
       run:
-        working-directory: ./GitHubActionPractice/.github/workflows/scripts
+        working-directory: ./workflows/scripts
     runs-on: ubuntu-latest
     steps:
       - name: running scripts
-        run: /scriptexe.sh 
+        run: bash scriptexe.sh 
