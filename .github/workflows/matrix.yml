@@ -1,4 +1,4 @@
-name: matrix
+name: matrix & max-parallel
 on:
   push:
 jobs:
