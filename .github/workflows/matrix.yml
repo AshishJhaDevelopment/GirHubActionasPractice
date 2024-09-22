@@ -5,7 +5,7 @@ jobs:
   matrix-job:
     runs-on: ubuntu-latest
     strategy:
-      max-parallels: 2
+      max-parallel: 2
       matrix:
         pet: [cat, dog]
         color: [pink, brown]
