@@ -9,7 +9,7 @@ jobs:
         if: contains('ashish','his')
         run: |
           echo "IT contains his"
-          echo "${{ vars.ASHISHVARIABLETEST }}"
+          echo "${{ secrets.ASHISHVARIABLETEST }}"
       - name: checking if conditions for starts with
         #Starts with
         if: startswith('ashish','as')
