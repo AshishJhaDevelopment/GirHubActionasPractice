@@ -8,8 +8,8 @@ jobs:
         #Contains
         if: contains('ashish','his')
         run: |
-        echo "IT contains his"
-        echo "${{ vars.AshishVariableTest }}"
+          echo "IT contains his"
+          echo "${{ vars.AshishVariableTest }}"
       - name: checking if conditions for starts with
         #Starts with
         if: startswith('ashish','as')
