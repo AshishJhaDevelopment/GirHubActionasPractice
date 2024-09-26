@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout  
 
       - name: Call reusable workflow
-        uses: ./.github/workflows/reusedWorkflowCalled.yml
+        uses: ./.github/workflows/reusedWorkflowCalled.yml@main_Ref
         with:
           name_param: Ashish_Jha_Ji
