@@ -5,7 +5,7 @@ on:
     inputs:
       name_param:
         required: true
-        type: string  # Correct type
+        type: string
 
 jobs:
   reused_job_implementation:
