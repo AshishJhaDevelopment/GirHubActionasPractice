@@ -3,12 +3,7 @@ on:
   workflow_dispatch: # This means that we will run this manually on UI
 
 jobs:
-  initial_setup:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2  # Fixed the action name to `actions/checkout`
-
+  uses: uses: actions/checkout@v2  # Fixed the action name to `actions/checkout`
   initiate_reusable:
     runs-on: ubuntu-latest
     defaults:
