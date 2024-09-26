@@ -10,8 +10,8 @@ jobs:
         working-directory: .github/
     steps:
       - name: Initiate setup
-        uses: action/checkout@v2
-        run: echo "Initiating reusable workflow"
+      - uses: action/checkout@v2
+
   
   initiate_reusable:
     runs-on: ubuntu-latest
