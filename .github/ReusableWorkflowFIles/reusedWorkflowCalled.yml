@@ -1,17 +1,17 @@
-name: reused workflow file
+name: Reused Workflow File
 
 on:
   workflow_call:
     inputs:
       name_param:
         required: true
-        type: String
+        type: string  # Change 'String' to 'string'
 
 jobs:
   reused_job_implementation:
     runs-on: ubuntu-latest
     steps:
       - name: Implementing reused data
-        runs: |
-          ${{ inputs.name_param }}
+        run: |
+          echo "Input parameter: ${{ inputs.name_param }}"
           echo "Executed successfully"
