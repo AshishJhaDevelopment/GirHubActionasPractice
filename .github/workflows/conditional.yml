@@ -7,7 +7,12 @@ jobs:
       - name: checking if conditions for contains
         #Contains
         if: contains('ashish','his')
-        run: echo "IT contains his"
+        run: |
+          echo "IT contains his"
+          #Ashish is the value for ASHISHVARIABLETEST
+          if [[ "${{ secrets.ASHISHVARIABLETEST }}" == *"abc"* ]]; then
+            echo "Secrets unlocked"
+          fi
       - name: checking if conditions for starts with
         #Starts with
         if: startswith('ashish','as')
