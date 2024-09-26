@@ -5,14 +5,11 @@ on:
 jobs:
   initiate_reusable:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: .github/  # Default working directory for all run steps
     steps:
       - name: Checkout code
         uses: actions/checkout@v2  # Checkout the repository
 
       - name: Call reusable workflow
-        uses: /.github/ReusableWorkflowFIles/reusedWorkflowCalled.yml@V1
+        uses: ./.github/ReusableWorkflowFiles/reusedWorkflowCalled.yml  # Correct path
         with:
           name_param: Ashish_Jha_Ji
