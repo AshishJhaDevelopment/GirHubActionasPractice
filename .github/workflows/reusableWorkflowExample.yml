@@ -6,6 +6,7 @@ jobs:
   calling_reusable:
     runs-on: ubuntu-latest
     steps:
+      - uses: action/checkout@v2
         # Path of the reused yml file
       - uses: AshishJhaDevelopment/GitHubActionPractice/.github/ReusableWorkflowFiles/reusedWorkflowCalled.yml
         with:
