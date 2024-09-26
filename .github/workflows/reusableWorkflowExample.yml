@@ -12,6 +12,6 @@ jobs:
   
   initiate_reusable:
     # Path of the reused yml file
-    uses: AshishJhaDevelopment/GitHubActionPractice/.github/ReusableWorkflowFiles/reusedWorkflowCalled.yml
+    uses: AshishJhaDevelopment/GitHubActionPractice/.github/ReusableWorkflowFiles/reusedWorkflowCalled.yml@V1
     with:
       name_param: Ashish_Jha_Ji
