@@ -1,0 +1,15 @@
+name: Reusable caller
+on:
+  workflow_dispatch: # This means that we will run this manually on UI
+
+jobs:
+  calling_reusable:
+    runs-on: ubuntu-latest
+    steps:
+        # Path of the reused yml file
+      - uses: AshishJhaDevelopment/GitHubActionPractice/.github/ReusableWorkflowFiles/reusedWorkflowCalled.yml
+        with:
+          name_param: Ashish_Jha_Ji
+      - name: Initiate resusable
+        run: echo "Initiating reusable workflow"
+          

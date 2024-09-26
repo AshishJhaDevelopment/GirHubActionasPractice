@@ -1,0 +1,17 @@
+name: reused workflow file
+
+on:
+  workflow_call:
+    inputs:
+      name_param:
+        required: true
+        type: String
+
+jobs:
+  reused_job_implementation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Implementing reused data
+        runs: |
+          ${{ inputs.name_param }}
+          echo "Executed successfully"

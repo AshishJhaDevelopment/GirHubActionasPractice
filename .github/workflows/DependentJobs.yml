@@ -7,7 +7,7 @@ jobs:
     needs: job2
     runs-on: ubuntu-latest
     steps:
-      - name: Executing Job PPPPP
+      - name: Executing Job P
         run: echo "job1 executed"
   job2:
     runs-on: ubuntu-latest
