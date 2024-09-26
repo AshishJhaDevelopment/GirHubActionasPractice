@@ -3,14 +3,15 @@ on:
   workflow_dispatch: # This means that we will run this manually on UI
 
 jobs:
-  calling_reusable:
+  initial_setuo:
     runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v2
-        # Path of the reused yml file
-      - uses: AshishJhaDevelopment/GitHubActionPractice/.github/ReusableWorkflowFiles/reusedWorkflowCalled.yml
-        with:
-          name_param: Ashish_Jha_Ji
-      - name: Initiate resusable
+      - name: Initiate setup
         run: echo "Initiating reusable workflow"
-          
+  
+  initiate_reusable:
+    # Path of the reused yml file
+    uses: AshishJhaDevelopment/GitHubActionPractice/.github/ReusableWorkflowFiles/reusedWorkflowCalled.yml
+      with:
+        name_param: Ashish_Jha_Ji
