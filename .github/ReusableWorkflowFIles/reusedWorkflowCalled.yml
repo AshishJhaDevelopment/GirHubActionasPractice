@@ -5,12 +5,15 @@ on:
     inputs:
       name_param:
         required: true
-        type: string  # Change 'String' to 'string'
+        type: string  # Correct type
 
 jobs:
   reused_job_implementation:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Correctly placed within steps
+
       - name: Implementing reused data
         run: |
           echo "Input parameter: ${{ inputs.name_param }}"
