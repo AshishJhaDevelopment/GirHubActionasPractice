@@ -2,11 +2,14 @@ name: ashish-custom-actions
 on:
   push:
 
-
 jobs:
   branding:
-    icon: 'award'
-    color: 'green'
+    runs-on: ubuntu-latest
+    name: Branding Job
+    steps:
+      - name: Branding Step
+        run: echo "Branding job is running"
+
   my-job:
     runs-on: ubuntu-latest
     name: A job to say hello
@@ -19,4 +22,4 @@ jobs:
     name: A job to say hello 1
     steps:
       - name: Hello world action step 1
-        run: echo "my-job1 is running"      
+        run: echo "my-job1 is running"
