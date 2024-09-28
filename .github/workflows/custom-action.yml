@@ -1,6 +1,11 @@
 name: ashish-custom-actions
 on:
   push:
+
+branding:
+  icon: 'award'
+  color: 'green'
+  
 jobs:
   my-job:
     runs-on: ubuntu-latest
