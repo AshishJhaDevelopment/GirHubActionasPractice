@@ -3,13 +3,6 @@ on:
   push:
 
 jobs:
-  branding:
-    runs-on: ubuntu-latest
-    name: Branding Job
-    steps:
-      - name: Branding Step
-        run: echo "Branding job is running"
-
   my-job:
     runs-on: ubuntu-latest
     name: A job to say hello
