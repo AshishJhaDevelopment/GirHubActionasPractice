@@ -2,11 +2,11 @@ name: ashish-custom-actions
 on:
   push:
 
-branding:
-  icon: 'award'
-  color: 'green'
-  
+
 jobs:
+  branding:
+    icon: 'award'
+    color: 'green'
   my-job:
     runs-on: ubuntu-latest
     name: A job to say hello
