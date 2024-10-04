@@ -1,4 +1,4 @@
-name: Example Workflow
+name: Print Environment Variable
 
 on:
   push:
